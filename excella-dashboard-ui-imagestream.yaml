@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ImageStream
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: excella-dashboard-ui
+  name: excella-dashboard-ui
+spec:
+  tags:
+  - annotations: null
+    from:
+      kind: DockerImage
+      name: tekleayele/excella-dashboard-ui:latest
+    generation: null
+    importPolicy: {}
+    name: latest
+status:
+  dockerImageRepository: ""
